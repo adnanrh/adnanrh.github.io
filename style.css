@@ -1,5 +1,6 @@
 body {
 	background-color: lightblue;
+	font-size: 100%;
 }
 
 .nav {
@@ -15,36 +16,152 @@ body {
 }
 .nav a {
     display: inline-block;
-    padding: 10px;
+    padding: 15px;
+    padding-right: 30px;
+    padding-left: 30px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
 }
 
-.content {
-	background: rgba(255, 255, 255, 0.3);
+.nav a:hover {
+	color: black;
+	background-color: #fee57e;
+}
+
+.index-content {
+	background: rgba(255, 255, 255, 0);
+	margin: auto;
+	padding-top: 200px;
+}
+
+.index-content #index-text {
+	text-align: center;
+	letter-spacing: 3px;
+	font-family: "Verdana", sans-serif, serif;
+	font-size: 6em;
+	font-weight: lighter;
+	text-shadow: 5px 3px white;
+}	
+
+.about-content {
+	text-align: center;
+	background: rgba(255, 255, 255, 0);
 	width: 80%;
 	margin: auto;
-	margin-top: 0px;
-	padding-top: 10px;
-	padding-bottom: 20px;
 }
 
-h1 {
+.about-text1 {
+	background: rgba(255, 255, 255, 0.3);
+	margin: auto;
+	float: left;
+	width: 20%;
+	text-align: justify;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-left: 25%;
+	margin-top: 40px;
+	margin-right: 100%
+}
+
+.about-text2 {
+	background: rgba(255, 255, 255, 0.3);
+	margin: auto;
+	float: right;
+	width: 20%;
+	text-align: justify;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-right: 25%;
+	margin-top: 60px;
+}
+
+.about-text2 ul {
+	text-align: left;
+}
+
+.about-events-list {
+	list-style-position: inside;
+}
+
+.pricing-content {
+	width: 50%;
+	margin: auto;
 	text-align: center;
 }
 
-.t1 {
-	text-align: left;
-	padding-left: 40px;
-	padding-right: 33%;
+.pricing-table-div {
+	background: rgba(255, 255, 255, 0.3);
+	margin: auto;
+	margin-top: 10%;
+	padding-top: 20px;
+	padding-bottom: 30px;
 }
 
-.t2 {
-	text-align: right;
-	padding-right: 40px;
-	padding-left: 33%;
+#pricing-table {
+	margin: auto;
+	border-collapse: collapse;
 }
 
-img {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+#pricing-table td, th {
+	padding: 10px;
+}
+
+.contact-content {
+	text-align: center;
+	background: rgba(255, 255, 255, 0);
+	width: 80%;
+	margin: auto;
+}
+
+.contact-email {
+	background: rgba(255, 255, 255, 0.3);
+	margin: auto;
+	float: left;
+	width: 20%;
+	text-align: justify;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-left: 25%;
+	margin-top: 40px;
+	margin-right: 100%
+}
+
+.contact-phone {
+	background: rgba(255, 255, 255, 0.3);
+	margin: auto;
+	float: right;
+	width: 20%;
+	text-align: justify;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-right: 25%;
+	margin-top: 40px;
+	margin-left: 100%;
+}
+
+.contact-fax {
+	background: rgba(255, 255, 255, 0.3);
+	margin: auto;
+	float: left;
+	width: 20%;
+	text-align: justify;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-left: 25%;
+	margin-top: 40px;
+	margin-right: 100%
+}
+
+.contact-address {
+	background: rgba(255, 255, 255, 0.3);
+	margin: auto;
+	float: right;
+	width: 20%;
+	text-align: justify;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-right: 25%;
+	margin-top: 40px;
+	margin-left: 100%;
 }
