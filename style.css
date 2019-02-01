@@ -1,5 +1,5 @@
 body {
-	background-color: lightblue;
+	background-size: auto;
 	font-size: 100%;
 }
 
@@ -32,7 +32,7 @@ body {
 .index-content {
 	background: rgba(255, 255, 255, 0);
 	margin: auto;
-	padding-top: 200px;
+	padding-top: 10%;
 }
 
 .index-content #index-text {
@@ -51,12 +51,16 @@ body {
 	margin: auto;
 }
 
+.about-content h1 {
+	color: #F0E68C;
+}
+
 .about-text1 {
 	background: rgba(255, 255, 255, 0.3);
 	margin: auto;
 	float: left;
 	width: 20%;
-	text-align: justify;
+	text-align: left;
 	padding-left: 20px;
 	padding-right: 20px;
 	margin-left: 25%;
@@ -69,11 +73,12 @@ body {
 	margin: auto;
 	float: right;
 	width: 20%;
-	text-align: justify;
+	text-align: right;
 	padding-left: 20px;
 	padding-right: 20px;
 	margin-right: 25%;
 	margin-top: 60px;
+	margin-bottom: 40px;
 }
 
 .about-text2 ul {
@@ -90,10 +95,14 @@ body {
 	text-align: center;
 }
 
+.pricing-content h1 {
+	color: #F0E68C	;
+}
+
 .pricing-table-div {
 	background: rgba(255, 255, 255, 0.3);
 	margin: auto;
-	margin-top: 10%;
+	margin-top: 10px;
 	padding-top: 20px;
 	padding-bottom: 30px;
 }
@@ -112,6 +121,10 @@ body {
 	background: rgba(255, 255, 255, 0);
 	width: 80%;
 	margin: auto;
+}
+
+.contact-content h1 {
+	color: #F0E68C;
 }
 
 .contact-email {
@@ -164,4 +177,5 @@ body {
 	margin-right: 25%;
 	margin-top: 40px;
 	margin-left: 100%;
+	margin-bottom: 40px;
 }
