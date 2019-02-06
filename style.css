@@ -1,0 +1,75 @@
+body {
+	background-color: #5c008a;
+	background-image: url("https://www.transparenttextures.com/patterns/brushed-alum.png");
+	font-size: 100%;
+}
+
+.calculator {
+	background: rgb(211,211,211);
+	width: 600px;
+	margin: auto;
+	text-align: center;
+}
+
+@media only screen and (max-width : 480px) {
+	.calculator {
+		width: 100%;
+	}
+}
+
+.displayContainer {
+	padding-top: 20px;
+	margin: auto;
+	margin-bottom: 20px;
+}
+
+#display {
+	width: 80%;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-right: 5px;
+	text-align: right;
+	font-size: 1.5em;
+}
+
+.buttonRow {
+	padding-bottom: 20px;
+}
+
+.calculator button {
+	border: none;
+    color: black;
+    background-color: rgb(153, 225, 255);
+    text-align: center;
+    display: inline;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 16%;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+.calculator button:hover {
+	background-color: rgb(240, 230, 140);
+}
+
+.leftButton {
+    margin-left: 20px;
+    margin-right: 5%;
+}
+
+.leftCentreButton {
+    margin-right: 5%;
+}
+
+.rightCentreButton {
+    margin-right: 5%;
+}
+
+.rightButton {
+    margin-right: 20px;
+}
+
+#buttonEmpty {
+	visibility: hidden;
+}

@@ -1,0 +1,81 @@
+<!doctype html>
+
+<html>
+	<head>
+		<link href="style.css" rel="stylesheet">
+		<title>TI-86 Plus Online</title>
+	</head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<body>
+		<div class="calculator">
+			<div class="displayContainer">
+				<input id="display" type="text" name="display" readonly></input>
+			</div>
+			<div class="buttonRow">
+				<button class="leftButton" id="buttonLeftBracket">(</button>
+				<button class="leftCentreButton" id="buttonRightBracket">)</button>
+				<button class="rightCentreButton" id="buttonEmpty"></button>
+				<button class="rightButton" id="buttonClear">CE</button>
+			</div>
+			<div class="buttonRow">
+				<button class="leftButton" id="button7">7</button>
+				<button class="leftCentreButton" id="button8">8</button>
+				<button class="rightCentreButton" id="button9">9</button>
+				<button class="rightButton" id="buttonDivide">/</button>
+			</div>
+			<div class="buttonRow">
+				<button class="leftButton" id="button4">4</button>
+				<button class="leftCentreButton" id="button5">5</button>
+				<button class="rightCentreButton" id="button6">6</button>
+				<button class="rightButton" id="buttonMultiply">x</button>
+			</div>
+			<div class="buttonRow">
+				<button class="leftButton" id="button1">1</button>
+				<button class="leftCentreButton" id="button2">2</button>
+				<button class="rightCentreButton" id="button3">3</button>
+				<button class="rightButton" id="buttonSubtract">-</button>
+			</div>
+			<div class="buttonRow">
+				<button class="leftButton" id="button0">0</button>
+				<button class="leftCentreButton" id="buttonDecimal">.</button>
+				<button class="rightCentreButton" id="buttonEquals">=</button>
+				<button class="rightButton" id="buttonAdd">+</button>
+			</div>
+		</div>
+		<script>
+		$(document).ready(function() {
+			for (let button of document.getElementsByTagName("button")) {
+				button.addEventListener("click", function() {
+					let display = document.getElementById("display");
+					let buttonValue = button.innerHTML;
+					// clear the display if a button is pressed after an error
+					if (display.value === "ERROR") {
+						display.value = "";
+					}
+					// clear display if clear pressed
+					if (buttonValue === "CE") {
+						display.value = "";
+					}
+					// else if evaluate button is pressed, attempt to evaluate. Display ERROR if
+					// expression is invalid
+					else if (buttonValue === "=") {
+						if (display.value !== "") {
+							try {
+								display.value = eval(display.value);
+							}
+							catch {
+								display.value = "ERROR";
+							}
+						}
+					}
+					// else if any other button pressed, append its value to display. Append
+					// * when x button is pressed so that it can be evaluated with eval
+					else {
+						display.value += buttonValue !== "x" ? buttonValue : "*";
+					}
+				})
+			}
+		});
+		</script>
+	</body>
+</html>
